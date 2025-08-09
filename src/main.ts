@@ -1,10 +1,10 @@
+import { Navigation } from "./components/navigation/navigation";
 import { ROUTES } from "./data/menu";
-import { createNavigation } from "./navigation";
 import "./style.css";
 
 const initializeApp = () => {
-  const navigation = createNavigation(ROUTES);
-  document.body.appendChild(navigation);
+  const navigation = Navigation({ routes: ROUTES });
+  document.querySelector("#app")!.innerHTML = navigation;
 };
 
 initializeApp();
