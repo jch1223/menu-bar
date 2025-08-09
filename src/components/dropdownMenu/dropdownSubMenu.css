@@ -1,0 +1,22 @@
+.dropdown-sub-menu {
+  position: relative;
+  min-width: 100px;
+  padding: 8px;
+  text-align: center;
+}
+
+.dropdown-sub-menu-container {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  top: 0;
+  left: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.dropdown-sub-menu.active .dropdown-sub-menu-container {
+  display: block;
+}

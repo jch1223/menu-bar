@@ -1,0 +1,20 @@
+.dropdown-menu {
+  position: relative;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.dropdown-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 100px;
+  background-color: #ffffff;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+}
+
+.dropdown-menu.active .dropdown-menu-container {
+  display: block;
+}
